@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparação de Cores</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .color-box {
+            width: 150px;
+            height: 150px;
+            margin: 0 10px;
+            border: 1px solid #ccc;
+        }
+        .original {
+            background-color: #DB4E44;
+        }
+        .lighter {
+            background-color: #E06960;
+        }
+        .darker {
+            background-color: #BA423A;
+        }
+        .label {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="color-box original"></div>
+        <div class="label">Original</div>
+        <div class="color-box lighter"></div>
+        <div class="label">15% Mais Clara</div>
+        <div class="color-box darker"></div>
+        <div class="label">15% Mais Escura</div>
+    </div>
+</body>
+</html>
