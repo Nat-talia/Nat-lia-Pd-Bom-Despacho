@@ -1,33 +1,95 @@
-.main footer{
+/* Cores personalizadas */
+:root {
+    --cor-destaque: #800020; /* Borgonha ou semelhante */
+    --cor-fonte: #000000; /* Preto */
+    --cor-fonte-destaque: #ffffff; /* Branco */
+    --cor-fundo: #f0f0f5; /* Branco gelo ou semelhante */
+}
+
+html {
+    background: var(--cor-fundo);
+    color: var(--cor-fonte);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: var(--cor-fonte-destaque); /* Branco */
+}
+
+h2, h3 {
+    color: var(--cor-fonte); /* Preto */
+    text-decoration: underline; /* Sublinhado */
+}
+
+h2 { font-size: 1.4em; }
+h3 { font-size: 1.2em; }
+
+.main footer {
     margin: 4%;
+    border: solid 2px var(--cor-destaque);
+    padding: 0.5em;
+    display: inline-block;
 }
 
-.main footer{
-border: solid 2px #1f295c;
-padding:0.5em;
-display: inline-block;
-}
-
-side ul{
+aside ul {
     list-style-type: none;
 }
 
-aside ul li{
-margin: 1em;
-text-align: center;
+aside ul li {
+    margin: 1em;
+    text-align: center;
 }
 
 .page-wrapper {
     width: 80%;
-max-width: 1280px;
-margin: auto;
+    max-width: 1280px;
+    margin: auto;
 }
 
-#zen-intro{
+#zen-intro {
     height: 550px;
 }
 
-#design-acrhives{
+#design-archives {
+    display: none;
+}
+
+#zen-intro header {
+    background-color: var(--cor-destaque);
+    color: var(--cor-fonte-destaque);
+}
+
+#zen-intro header h1, #zen-intro header h2 {
+    display: inline-block;
+}
+
+#zen-intro header h1 {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+p {
+    text-indent: 1em;
+}
+
+.summary {
+    text-align: right;
+}
+
+.main p {
+    line-height: 1.5;
+}
+
+abbr {
+    font-variant: small-caps;
+}
+
     display: none;
 }
 
